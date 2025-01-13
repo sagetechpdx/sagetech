@@ -2,6 +2,7 @@
 import SectionTitle from "../ui/SectionTitle.astro";
 import SwiperSlider from "../ui/SwiperSlider.astro";
 import Section from "./Section.astro";
+import "react-google-reviews/dist/index.css";
 ---
 
 <Section id="testimonials">
@@ -11,7 +12,8 @@ import Section from "./Section.astro";
       description="Don’t just take our word for it - hear from some of our satisfied users! Check out some of our testimonials below to see what others are saying about Sage Tech."
     />
     <div class="rounded-[45px] bg-dark mb-[150px] text-gray">
-
+    <ReactGoogleReviews layout="badge" featurableId={featurableWidgetId} />
+    <ReactGoogleReviews layout="carousel" featurableId={featurableWidgetId} />
     </div>
   </div>
 </Section>
