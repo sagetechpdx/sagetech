@@ -3,14 +3,14 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 // Import the Vercel adapter
-import netlify from "@astrojs/netlify";
+import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sagetech.netlify.app",
+  site: "https://sagetech.vercel.app",
   integrations: [tailwind()],
-  output: "static",
-  adapter: netlify(),
+  output: "server",
+  adapter: vercel(),
   alias: {
     "@components": "./src/components",
     "@layouts": "./src/layouts",
