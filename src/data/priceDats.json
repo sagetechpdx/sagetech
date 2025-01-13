@@ -7,7 +7,7 @@
         "support": "6 months",
         "update": "6 months",
         "action": "Get Started",
-        "link": "/"
+        "link": "/#home"
     },
     {
         "title": "Remote Support",
@@ -15,6 +15,6 @@
         "devCount": "Get support from anywhere as long as you have an internet connection",
         "price": "40/half-hour",
         "action": "Get Started",
-        "link": "/"
-    },
+        "link": "/#home"
+    }
 ]
