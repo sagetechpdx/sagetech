@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+/* import { Image } from "astro:assets"; */
 import Facebook from "../../assets/facebook.svg";
 import Google from "../../assets/google.svg";
 import Logo from "../../assets/sage_600px.png";
@@ -9,15 +9,15 @@ import ShortForm from "../ui/ShortForm.astro";
 const logos = [
   { name: "Google", src: Google, link: "https://maps.app.goo.gl/YV6bjX1et2YfEPg69" },
   { name: "Facebook", src: Facebook, link: "https://facebook.com/sagetechpdx" },
-  { name: "Yelp", src: Linkedin, link: "https://www.yelp.com/biz/sage-tech-portland" },
+  { name: "Yelp", src: Yelp, link: "https://www.yelp.com/biz/sage-tech-portland" },
 ];
 
 const links = [
   { name: "About us", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Use Cases", href: "#cases" },
-  { name: "Pricing", href: "#Testimonials" },
-  { name: "Blog", href: "#Home" },
+  { name: "Pricing", href: "#testimonials" },
+  { name: "Blog", href: "#home" },
 ];
 ---
 
@@ -32,7 +32,7 @@ const links = [
         >
           <picture>
             <a href="#home">
-              <Image src={Logo} alt="Logo for Kreatif Brand" />
+              <img src={Logo} alt="Logo" />
             </a>
           </picture>
           <ul class="flex flex-col sm:flex-row gap-5">
@@ -89,10 +89,10 @@ const links = [
           >2024 Sage Tech <a
             class="underline"
             target="_blank"
-            href="https://astro.build">Astro</a
-          > by 
+            href="/">Sage Tech</a
+          > 
          </span
-        >&nbsp
+        >&nbsp;
       </div>
     </div>
   </div>
