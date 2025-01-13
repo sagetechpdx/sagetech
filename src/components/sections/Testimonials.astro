@@ -2,8 +2,9 @@
 import SectionTitle from "../ui/SectionTitle.astro";
 import SwiperSlider from "../ui/SwiperSlider.astro";
 import Section from "./Section.astro";
-import ReactGoogleReviews from '../components/ui/ReactGoogleReviews.jsx';
 import "react-google-reviews/dist/index.css";
+import GoogleReviews from '../components/GoogleReviews.jsx';
+const featurableWidgetId = '842ncdd8-0f40-438d-9c...';
 ---
 
 <Section id="testimonials">
@@ -14,8 +15,7 @@ import "react-google-reviews/dist/index.css";
     />
     <div class="rounded-[45px] bg-dark mb-[150px] text-gray">
     <ClientOnly>
-    <ReactGoogleReviews layout="badge" featurableId={featurableWidgetId} />
-    <ReactGoogleReviews layout="carousel" featurableId={featurableWidgetId} />
+    <GoogleReviews featurableWidgetId={featurableWidgetId} />
     </ClientOnly>
     </div>
   </div>
