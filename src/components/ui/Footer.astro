@@ -1,9 +1,9 @@
 ---
-/* import { Image } from "astro:assets"; */
+import { Image } from "astro:assets";
 import Facebook from "../../assets/facebook.svg";
-import Google from "../../assets/google.svg";
+import Google from "../../assets/linkedin.svg";
 import Logo from "../../assets/sage_600px.png";
-import Yelp from "../../assets/yelp.svg";
+import Yelp from "../../assets/youtube.svg";
 import ShortForm from "../ui/ShortForm.astro";
 
 const logos = [
@@ -32,7 +32,7 @@ const links = [
         >
           <picture>
             <a href="#home">
-              <img src={Logo} alt="Logo" />
+              <Image src={Logo} alt="Logo" />
             </a>
           </picture>
           <ul class="flex flex-col sm:flex-row gap-5">
@@ -55,7 +55,7 @@ const links = [
                   <li>
                     <a href={logo.link} target="_blank">
                       <picture>
-                        <Image src={logo.src} alt={logo.name} />
+                        <img src={logo.src} alt={logo.name} />
                       </picture>
                     </a>
                   </li>
