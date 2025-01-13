@@ -9,8 +9,8 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   site: "http://sagetech.netlify.app",
   integrations: [tailwind()],
-  output: "server",
-  adapter: vercel(),
+  output: "static",
+  adapter: netlify(),
   alias: {
     "@components": "./src/components",
     "@layouts": "./src/layouts",
