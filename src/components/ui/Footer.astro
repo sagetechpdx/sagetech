@@ -1,16 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import Facebook from "../../assets/facebook.svg";
-import Google from "../../assets/linkedin.svg";
 import Logo from "../../assets/sage_600px.png";
-import Yelp from "../../assets/youtube.svg";
 import ShortForm from "../ui/ShortForm.astro";
-
-const logos = [
-  { name: "Google", src: Google, link: "https://maps.app.goo.gl/YV6bjX1et2YfEPg69" },
-  { name: "Facebook", src: Facebook, link: "https://facebook.com/sagetechpdx" },
-  { name: "Yelp", src: Yelp, link: "https://www.yelp.com/biz/sage-tech-portland" },
-];
 
 const links = [
   { name: "About us", href: "#about" },
@@ -35,19 +26,15 @@ const links = [
               <Image src={Logo} alt="Logo" />
             </a>
           </picture>
+          
           <ul class="flex flex-col sm:flex-row gap-5">
-            {
-              links.map((link) => {
-                return (
-                  <li class="text-center">
-                    <a class="underline" href={link.href}>
-                      {link.name}
-                    </a>
-                  </li>
-                );
-              })
-            }
+            { links.map((link) => { return (
+            <li class="text-center">
+              <a class="underline" href="{link.href}"> {link.name} </a>
+            </li>
+            ); }) }
           </ul>
+          
           <ul class="flex gap-5">
             <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="text-decoration-none">
               <svg
